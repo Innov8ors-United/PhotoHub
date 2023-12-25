@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-n</title>
+    <link rel="stylesheet" href="StyleSheet/index.css">
+</head>
+<body>
+    <div>
+        <h1>Image and Text Upload</h1>
+        <form id="uploadForm">
+            <input type="file" id="uploadInput" accept="image/*" multiple>
+            <br>
+            <textarea id="apertureText" placeholder="Enter Aperture of the image" required></textarea>
+            <br>
+            <textarea id="shutterText" placeholder="Enter Shutter of the image" required></textarea>
+            <br>
+            <textarea id="isoText" placeholder="Enter ISO of the image" required></textarea>
+            <br>
+            <button type="button" onclick="handleUpload()">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <div class="image-container" id="imageContainer"></div>
+    </div>
+    
+    <script src="Script/index.js"></script>
+</body>
+</html>
